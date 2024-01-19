@@ -5,10 +5,12 @@
 
 arr =  ["no bun","bug bun bug bun bug bug","bunny bug","buggy bug bug buggy"]
 str = "bug"
+print arr.sort_by{|i| i.count(str)}.reverse
 
-arr.each do |i|
-   i.include?(" ")
-    i.split
-end
 
-print "OUTPUT: #{arr.sort()}"
+
+#it is wrong way
+# arr.each do |i|
+#     i.split
+# end
+# print "OUTPUT: #{arr.sort()}"
